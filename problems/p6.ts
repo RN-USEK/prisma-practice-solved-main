@@ -15,7 +15,5 @@ export const findAllMoviesThatAUserWatched = async (userId: number) => {
     },
   });
   if (!userMovies) return [];
-  return userMovies.starRatings.map(
-    (starRating: { movie: any }) => starRating.movie
-  );
+  return userMovies.starRatings.map((starRating) => starRating.movie);
 };

@@ -11,7 +11,7 @@ export const getAverageScoreForUser = (userId: number) => {
         score: true,
       },
     })
-    .then((data: { _avg: { score: any } }) => data._avg.score);
+    .then((data) => data._avg.score);
 
   //   const userWithRatings = await prisma.user.findUnique({
   //     where: {
